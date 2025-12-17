@@ -1,0 +1,74 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2025-12-16 17:48:37.496001",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "article_title",
+        "professor",
+        "article_file",
+        "is_scopus",
+        "task"
+    ],
+    "fields": [
+        {
+            "fieldname": "article_title",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "ชื่อบทความ",
+            "reqd": 1
+        },
+        {
+            "fieldname": "professor",
+            "fieldtype": "Link",
+            "label": "ชื่ออาจารย์",
+            "options": "User"
+        },
+        {
+            "fieldname": "article_file",
+            "fieldtype": "Attach",
+            "label": "แนบไฟล์บทความ"
+        },
+        {
+            "default": "วารสารอยู่ใน Scopus หรือไม่",
+            "fieldname": "is_scopus",
+            "fieldtype": "Select",
+            "label": "วารสารอยู่ใน Scopus หรือไม่",
+            "options": "วารสารอยู่ใน Scopus หรือไม่\nScopus\nNon Scopus"
+        },
+        {
+            "fieldname": "task",
+            "fieldtype": "Link",
+            "label": "Task ตรวจสอบ",
+            "options": "Task"
+        }
+    ],
+    "grid_page_length": 50,
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2025-12-17 13:54:18.688023",
+    "modified_by": "Administrator",
+    "module": "Projects",
+    "name": "Article Submission",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "row_format": "Dynamic",
+    "rows_threshold_for_grid_search": 20,
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}
