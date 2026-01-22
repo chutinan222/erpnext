@@ -12,11 +12,14 @@ class ArticleSubmission(Document):
 	from typing import TYPE_CHECKING, Literal
 
 	if TYPE_CHECKING:
-
+		from erpnext.projects.doctype.article_author.article_author import ArticleAuthor
+		from erpnext.projects.doctype.attached_professor.attached_professor import AttachedProfessor
 		article_file: str | None
 		article_title: str
+		date_paper: str | None
 		is_scopus: Literal["วารสารอยู่ใน Scopus หรือไม่", "Scopus", "Non Scopus"]
-		professor: str | None
-		task: str | None
+		professor: list[ArticleAuthor]
+		professor_attach_paper: list[AttachedProfessor]
+		related_project: str | None
 	# end: auto-generated types
 	pass

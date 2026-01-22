@@ -1,15 +1,19 @@
 {
     "actions": [],
     "allow_rename": 1,
+    "autoname": "format:{article_title}",
     "creation": "2025-12-16 17:48:37.496001",
     "doctype": "DocType",
     "engine": "InnoDB",
     "field_order": [
         "article_title",
         "professor",
+        "professor_attach_paper",
+        "column_break_pkdw",
         "article_file",
         "is_scopus",
-        "task"
+        "date_paper",
+        "related_project"
     ],
     "fields": [
         {
@@ -21,9 +25,9 @@
         },
         {
             "fieldname": "professor",
-            "fieldtype": "Link",
-            "label": "ชื่ออาจารย์",
-            "options": "User"
+            "fieldtype": "Table",
+            "label": "ชื่อผู้แต่ง",
+            "options": "Article Author"
         },
         {
             "fieldname": "article_file",
@@ -38,19 +42,35 @@
             "options": "วารสารอยู่ใน Scopus หรือไม่\nScopus\nNon Scopus"
         },
         {
-            "fieldname": "task",
+            "fieldname": "professor_attach_paper",
+            "fieldtype": "Table",
+            "label": "ชื่ออาจารย์ที่แนบPaper",
+            "options": "Attached Professor"
+        },
+        {
+            "fieldname": "date_paper",
+            "fieldtype": "Date",
+            "label": "วันที่ตีพิมพ์"
+        },
+        {
+            "fieldname": "column_break_pkdw",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "related_project",
             "fieldtype": "Link",
-            "label": "Task ตรวจสอบ",
-            "options": "Task"
+            "label": "Related Project",
+            "options": "Project"
         }
     ],
     "grid_page_length": 50,
     "index_web_pages_for_search": 1,
     "links": [],
-    "modified": "2025-12-17 13:54:18.688023",
+    "modified": "2026-01-21 19:12:45.776074",
     "modified_by": "Administrator",
     "module": "Projects",
     "name": "Article Submission",
+    "naming_rule": "Expression",
     "owner": "Administrator",
     "permissions": [
         {
