@@ -12,8 +12,7 @@
         "column_break_pkdw",
         "article_file",
         "is_scopus",
-        "date_paper",
-        "related_project"
+        "date_paper"
     ],
     "fields": [
         {
@@ -44,7 +43,7 @@
         {
             "fieldname": "professor_attach_paper",
             "fieldtype": "Table",
-            "label": "ชื่ออาจารย์ที่แนบPaper",
+            "label": "Related Project",
             "options": "Attached Professor"
         },
         {
@@ -55,18 +54,12 @@
         {
             "fieldname": "column_break_pkdw",
             "fieldtype": "Column Break"
-        },
-        {
-            "fieldname": "related_project",
-            "fieldtype": "Link",
-            "label": "Related Project",
-            "options": "Project"
         }
     ],
     "grid_page_length": 50,
     "index_web_pages_for_search": 1,
     "links": [],
-    "modified": "2026-01-21 19:12:45.776074",
+    "modified": "2026-01-30 11:20:40.343621",
     "modified_by": "Administrator",
     "module": "Projects",
     "name": "Article Submission",

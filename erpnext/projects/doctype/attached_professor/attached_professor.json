@@ -6,11 +6,12 @@
     "engine": "InnoDB",
     "field_order": [
         "professor_id",
-        "professor_name"
+        "professor_name",
+        "related_project"
     ],
     "fields": [
         {
-            "fetch_from": "professor_id.employee_name",
+            "fetch_from": "professor_id.middle_name",
             "fieldname": "professor_name",
             "fieldtype": "Data",
             "label": "ชื่ออาจารย์"
@@ -20,13 +21,19 @@
             "fieldtype": "Link",
             "label": "IDอาจารย์",
             "options": "Employee"
+        },
+        {
+            "fieldname": "related_project",
+            "fieldtype": "Link",
+            "label": "Related Project",
+            "options": "Project"
         }
     ],
     "grid_page_length": 50,
     "index_web_pages_for_search": 1,
     "istable": 1,
     "links": [],
-    "modified": "2026-01-14 22:06:05.046054",
+    "modified": "2026-01-30 11:24:03.490621",
     "modified_by": "Administrator",
     "module": "Projects",
     "name": "Attached Professor",

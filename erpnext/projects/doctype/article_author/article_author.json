@@ -6,27 +6,34 @@
     "engine": "InnoDB",
     "field_order": [
         "teacher_id",
-        "teacher_name"
+        "teacher_name",
+        "full_teacher_name"
     ],
     "fields": [
         {
-            "fetch_from": "teacher_id.employee_name",
+            "fetch_from": "teacher_id.middle_name",
             "fieldname": "teacher_name",
             "fieldtype": "Data",
-            "label": "ชื่ออาจารย์ผู้แต่ง"
+            "label": "ผู้แต่ง"
         },
         {
             "fieldname": "teacher_id",
             "fieldtype": "Link",
             "label": "IDอาจารย์ผู้แต่ง",
             "options": "Employee"
+        },
+        {
+            "fetch_from": "teacher_id.employee_name",
+            "fieldname": "full_teacher_name",
+            "fieldtype": "Data",
+            "label": "Full Name"
         }
     ],
     "grid_page_length": 50,
     "index_web_pages_for_search": 1,
     "istable": 1,
     "links": [],
-    "modified": "2026-01-14 21:55:42.812120",
+    "modified": "2026-01-30 11:18:54.777187",
     "modified_by": "Administrator",
     "module": "Projects",
     "name": "Article Author",

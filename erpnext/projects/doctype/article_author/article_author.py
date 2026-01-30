@@ -13,6 +13,7 @@ class ArticleAuthor(Document):
 
 	if TYPE_CHECKING:
 
+		full_teacher_name: str | None
 		parent: str
 		parentfield: str
 		parenttype: str

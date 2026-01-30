@@ -20,6 +20,5 @@ class ArticleSubmission(Document):
 		is_scopus: Literal["วารสารอยู่ใน Scopus หรือไม่", "Scopus", "Non Scopus"]
 		professor: list[ArticleAuthor]
 		professor_attach_paper: list[AttachedProfessor]
-		related_project: str | None
 	# end: auto-generated types
 	pass

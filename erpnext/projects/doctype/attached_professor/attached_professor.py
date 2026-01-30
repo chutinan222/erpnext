@@ -18,5 +18,6 @@ class AttachedProfessor(Document):
 		parenttype: str
 		professor_id: str | None
 		professor_name: str | None
+		related_project: str | None
 	# end: auto-generated types
 	pass
