@@ -72,7 +72,7 @@ def build_column():
 			"fieldname": "professor_name",
 			"label": "Related Project",
 			"fieldtype": "Table",
-			"width": 250,
+			"width": 150,
 		},
 		{
 			"fieldname": "is_scopus",
